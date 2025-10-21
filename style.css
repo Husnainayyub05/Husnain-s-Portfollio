@@ -1,0 +1,114 @@
+body {
+  background-color: #f8f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+nav {
+  text-align: center;
+  padding: 10px;
+  background: #ecf0f1;
+}
+nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+section {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+/* === CONTACT FORM DARK THEME === */
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #1f2a35; /* matches your navbar/footer tone */
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #2b3a47; /* darker navy shade */
+  color: #f1f1f1;
+  border: 1px solid #3e5364;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aab7c4;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00b894;
+  box-shadow: 0 0 8px rgba(0,184,148,0.4);
+}
+
+.contact-form button {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #019670;
+  transform: scale(1.03);
+}
+
+/* Keep consistent spacing on small screens */
+@media (max-width: 600px) {
+  .contact-section {
+    margin: 30px 20px;
+    padding: 25px;
+  }
+}
